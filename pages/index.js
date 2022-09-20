@@ -1,56 +1,39 @@
 import React from "react";
-import { PublicKey } from "@solana/web3.js";
-import { useWallet } from "@solana/wallet-adapter-react";
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import Head from "next/head";
+import Navbar from "../components/Navbar";
+import Title from "../components/Title";
+import Images from "../components/Images";
+import About from "../components/About";
+import Download from "../components/Download";
 
 // Constants
-const TWITTER_HANDLE = "_buildspace";
-const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
 
 const App = () => {
   // This will fetch the users' public key (wallet address) from any wallet we support
-  const { publicKey } = useWallet();
-
-  const renderNotConnectedContainer = () => (
-    <div>
-      <img
-        src="https://media.giphy.com/media/eSwGh3YK54JKU/giphy.gif"
-        alt="emoji"
-      />
-
-      <div className="button-container">
-        <WalletMultiButton className="cta-button connect-wallet-button" />
-      </div>
-    </div>
-  );
 
   return (
-    <div className="App">
-      <div className="container">
-        <header className="header-container">
-          <p className="header"> 😳 Buildspace Emoji Store 😈</p>
-          <p className="sub-text">
-            The only emoji store that accepts shitcoins
-          </p>
-        </header>
+    <div>
+      <Head>
+        <title>Game Page Example</title>
+        <meta name="content" content="MY GAME INFO" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-        <main>
-          {/* We only render the connect button if public key doesn't exist */}
-          {publicKey ? "Connected!" : renderNotConnectedContainer()}
-        </main>
-
-        <div className="footer-container">
-          <img
-            alt="Twitter Logo"
-            className="twitter-logo"
-            src="twitter-logo.svg"
-          />
-          <a
-            className="footer-text"
-            href={TWITTER_LINK}
-            target="_blank"
-            rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
+      <Navbar />
+      <div class="bg-gray-600 flex justify-center">
+        <div class="bg-blue-600 grid grid-cols-3 grid-rows-9 gap-4 max-w-3xl h-auto justify-items-center p-6">
+          <div class="box col-start-1 col-end-4">
+            <Title />
+          </div>
+          <div class="box col-start-1 col-end-4">
+            <Images />
+          </div>
+          <div class="box col-start-1 col-end-3">
+            <About />
+          </div>
+          <div class="box col-start-3 col-end-4">
+            <Download />
+          </div>
         </div>
       </div>
     </div>
