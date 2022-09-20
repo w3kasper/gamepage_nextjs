@@ -18,21 +18,22 @@ const App = () => {
         <meta name="content" content="MY GAME INFO" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Navbar />
-      <div class="bg-gray-600 flex justify-center">
-        <div class="bg-blue-600 grid grid-cols-3 grid-rows-9 gap-4 max-w-3xl h-auto justify-items-center p-6">
-          <div class="box col-start-1 col-end-4">
-            <Title />
-          </div>
-          <div class="box col-start-1 col-end-4">
-            <Images />
-          </div>
-          <div class="box col-start-1 col-end-3">
-            <About />
-          </div>
-          <div class="box col-start-3 col-end-4">
-            <Download />
+      <div className="w-screen bg-gray-400 fixed drop-shadow-lg">
+        <Navbar />
+        <div class="bg-gray-600 flex justify-center">
+          <div class="bg-blue-600 grid grid-cols-3 grid-rows-9 gap-4 max-w-3xl h-auto justify-items-center p-6">
+            <div class="box col-start-1 col-end-4">
+              <Title />
+            </div>
+            <div class="box col-start-1 col-end-4">
+              <Images />
+            </div>
+            <div class="box col-start-1 col-end-3">
+              <About />
+            </div>
+            <div class="box col-start-3 col-end-4">
+              <Download />
+            </div>
           </div>
         </div>
       </div>

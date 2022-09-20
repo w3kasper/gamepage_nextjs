@@ -10,7 +10,7 @@ const Navbar = () => {
   const { publicKey } = useWallet();
   const [publicKeyString, setPublicKeyString] = useState([]); //set useState variables
 
-  //set useeffect to "mount" the variable on refresh/reload of item
+  //set useeffect to "mount" the variable on refresh/reload of item when its updated
   useEffect(() => {
     publicKey
       ? setPublicKeyString(publicKey.toBase58())
