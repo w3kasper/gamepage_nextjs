@@ -19,15 +19,12 @@ const Navbar = () => {
 
   const renderConnectedContainer = () => (
     <div>
-      <p>"Connected"</p>
-      <h1>{publicKeyString}</h1>
+      <p>"Connected" {publicKeyString}</p>
     </div>
   );
 
   const renderNotConnectedContainer = () => (
     <div>
-      <p>not connext</p>
-
       <div>
         <WalletMultiButton />
       </div>
