@@ -2,22 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-.cta-button {
-  height: 45px;
-  border: 0;
-  width: auto;
-  padding-left: 40px;
-  padding-right: 40px;
-  border-radius: 10px;
+.cta-button-select {
+  height: 30px;
+  border: 1.5px solid #d48bff;
+  width: 120px;
+  padding-left: 15px;
+  padding-right: 0px;
+  border-radius: 20px;
+  color: #da9cfd;
   cursor: pointer;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 14px;
+  font-weight: normal;
+  background: black;
+  font-family: Noto, Helvetica, Arial, sans-serif;
+}
+
+.cta-user-wallet {
+  height: 30px;
+  border: 1.5px solid #d48bff;
+  width: 120px;
+  padding-left: 15px;
+  padding-right: 0px;
+  padding-top: 2px;
+  border-radius: 20px;
+  color: #da9cfd;
+  font-size: 14px;
+  font-weight: normal;
+  background: black;
+  font-family: Noto, Helvetica, Arial, sans-serif;
 }
 
 .connect-wallet-button {
   color: white;
-  background: -webkit-linear-gradient(left, #ff8867, #ff52ff);
-  background-size: 200% 200%;
+  background: -webkit-linear-gradient(left, #00e1ff, #ff00ff);
+  background-size: 150% 150%;
   animation: gradient-animation 4s ease infinite;
   max-width: 300px;
 }

@@ -12,27 +12,29 @@ const Navbar = () => {
 
   //set useeffect to "mount" the variable on refresh/reload of item when its updated
   useEffect(() => {
-    publicKey
-      ? setPublicKeyString(publicKey.toBase58())
-      : "publicKey is NOT CONNECTED/NULL";
+    publicKey ? setPublicKeyString(publicKey.toBase58()) : "NOT CONNECTED/NULL";
   }, [publicKey]);
 
   const renderConnectedContainer = () => (
-    <div>
-      <p>"Connected" {publicKeyString}</p>
+    <div className="h-[40px] w-screen bg-black">
+      <div className="absolute top-0 right-[10px] py-[5px]">
+        <p className="cta-user-wallet">
+          {publicKeyString.toString().substring(0, 9) + "..."}
+        </p>
+      </div>
     </div>
   );
 
   const renderNotConnectedContainer = () => (
-    <div>
-      <div>
-        <WalletMultiButton />
+    <div className="h-[40px] w-screen bg-black">
+      <div className="absolute top-0 right-[10px] py-[5px]">
+        <WalletMultiButton className="cta-button-select" />
       </div>
     </div>
   );
 
   return (
-    <div className="App">
+    <div>
       <main>
         {/* We only render the connect button if public key doesn't exist */}
         {publicKey ? renderConnectedContainer() : renderNotConnectedContainer()}
