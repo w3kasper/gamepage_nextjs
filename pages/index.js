@@ -20,8 +20,9 @@ const App = () => {
       </Head>
       <div>
         <Navbar />
-        <div class="bg-gray-900 flex justify-center">
-          <div class="bg-gray-800 grid grid-cols-3 grid-rows-9 gap-4 max-w-3xl h-auto justify-items-center p-6">
+        <div class="w-full h-[70px]"></div>
+        <div class="flex justify-center">
+          <div class="bg-green-400 rounded-md grid grid-cols-3 grid-rows-9 gap-4 max-w-3xl h-auto justify-items-center p-6">
             <div class="box col-start-1 col-end-4">
               <Title />
             </div>
