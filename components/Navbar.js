@@ -16,28 +16,28 @@ const Navbar = () => {
   }, [publicKey]);
 
   const renderConnectedContainer = () => (
-    <div className="h-[40px] w-screen bg-black">
-      <div className="absolute top-0 right-[10px] py-[5px]">
-        <p className="cta-user-wallet">
-          {publicKeyString.toString().substring(0, 9) + "..."}
-        </p>
-      </div>
+    <div className="absolute top-0 right-[10px] py-[5px]">
+      <p className="cta-user-wallet">
+        {publicKeyString.toString().substring(0, 9) + "..."}
+      </p>
     </div>
   );
 
   const renderNotConnectedContainer = () => (
-    <div className="h-[40px] w-screen bg-black">
-      <div className="absolute top-0 right-[10px] py-[5px]">
-        <WalletMultiButton className="cta-button-select" />
-      </div>
+    <div className="absolute top-0 right-[10px] py-[5px]">
+      <WalletMultiButton className="cta-button-select" />
     </div>
   );
 
   return (
     <div>
       <main>
-        {/* We only render the connect button if public key doesn't exist */}
-        {publicKey ? renderConnectedContainer() : renderNotConnectedContainer()}
+        <div className="h-[40px] w-screen bg-black">
+          {/* We only render the connect button if public key doesn't exist */}
+          {publicKey
+            ? renderConnectedContainer()
+            : renderNotConnectedContainer()}
+        </div>
       </main>
     </div>
   );
