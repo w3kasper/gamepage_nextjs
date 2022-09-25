@@ -5,6 +5,7 @@ import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 import Image from "next/image";
 import profileIconRed from "../public/images/profileiconRED.svg";
+import profileIconGreen from "../public/images/profileiconGREEN.svg";
 
 // Constants
 
@@ -19,9 +20,10 @@ const Navbar = () => {
   }, [publicKey]);
 
   const renderConnectedContainer = () => (
-    <div className="absolute top-0 right-[10px] py-[9px]">
-      <p className="cta-user-wallet">
-        {publicKeyString.toString().substring(0, 9) + "..."}
+    <div className="flex top-0 right-[10px] py-[17px]">
+      <Image src={profileIconGreen} className="" alt="/" />
+      <p className="w-[145px] h-[30px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:bg-black outline outline-1 rounded font-sans font-thin text-sm text-white text-center uppercase py-[5px]">
+        {publicKeyString.toString().substring(0, 12) + "..."}
       </p>
     </div>
   );
@@ -35,7 +37,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex justify-end pr-4 w-full h-[66px] shadow-xl z-[100] bg-zinc-800 border-b-2 border-white">
+      <div className="flex justify-end pr-4 w-full h-[66px] shadow-xl z-[100] bg-zinc-900 border-b-2 border-purple-500">
         {/* We only render the connect button if public key doesn't exist */}
         {publicKey ? renderConnectedContainer() : renderNotConnectedContainer()}
       </div>
