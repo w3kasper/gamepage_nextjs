@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: rgb(253, 237, 14);
-  background-image: url("../public/images/bg.svg");
+  background-color: rgb(253, 177, 14);
 }
 
 .cta-button-select {
@@ -13,7 +12,7 @@ body {
   width: 120px;
   padding-left: 15px;
   padding-right: 0px;
-  border-radius: 20px;
+  border-radius: 8px;
   color: #ec4899;
   cursor: pointer;
   font-size: 14px;

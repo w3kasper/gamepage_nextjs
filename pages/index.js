@@ -19,10 +19,12 @@ const App = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Navbar />
+        <div class="place-content-center">
+          <Navbar />
+        </div>
         <div class="w-full h-[70px]"></div>
         <div class="flex justify-center">
-          <div class="bg-green-400 rounded-md grid grid-cols-3 grid-rows-9 gap-4 max-w-3xl h-auto justify-items-center p-6">
+          <div class="bg-black rounded-md grid grid-cols-3 grid-rows-9 gap-2 max-w-5xl h-auto justify-items-center p-[15px]">
             <div class="box col-start-1 col-end-4">
               <Title />
             </div>

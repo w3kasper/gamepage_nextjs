@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import titleimage from "../public/images/title.png";
+import titleimage from "../public/images/title.svg";
 
 const Title = () => {
   return (

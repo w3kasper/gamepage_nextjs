@@ -1,7 +1,7 @@
 import React from "react";
 
 const Download = () => {
-  return <div> Doownload</div>;
+  return <div className="text-white"> Doownload</div>;
 };
 
 export default Download;
