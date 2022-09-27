@@ -22,7 +22,7 @@ const App = () => {
         <div class="place-content-center">
           <Navbar />
         </div>
-        <div class="w-full h-[70px]"></div>
+        <div class="w-full h-[90px]"></div>
         <div class="flex justify-center">
           <div class="bg-black rounded-md grid grid-cols-3 grid-rows-9 gap-2 max-w-5xl h-auto justify-items-center p-[15px]">
             <div class="box col-start-1 col-end-4">
