@@ -2,7 +2,27 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="text-white">
+    <div className="text-white p-4">
+      <h1>
+        BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+        BLAH BLAH BLAH BLAH BLAH
+      </h1>
+      <h1>
+        BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+        BLAH BLAH BLAH BLAH BLAH
+      </h1>
+      <h1>
+        BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+        BLAH BLAH BLAH BLAH BLAH
+      </h1>
+      <h1>
+        BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+        BLAH BLAH BLAH BLAH BLAH
+      </h1>
+      <h1>
+        BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
+        BLAH BLAH BLAH BLAH BLAH
+      </h1>
       <h1>
         BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH BLAH
         BLAH BLAH BLAH BLAH BLAH

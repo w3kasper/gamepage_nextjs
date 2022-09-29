@@ -24,17 +24,17 @@ const App = () => {
         </div>
         <div class="w-full h-[90px]"></div>
         <div class="flex justify-center">
-          <div class="bg-black rounded-md grid grid-cols-3 grid-rows-9 gap-2 max-w-5xl h-auto justify-items-center p-[15px]">
-            <div class="box col-start-1 col-end-4">
+          <div class="bg-black rounded-lg grid grid-cols-3 grid-rows-9 gap-2 max-w-5xl h-auto justify-items-center p-[15px]">
+            <div class="box col-start-1 col-end-5">
               <Title />
             </div>
-            <div class="box col-start-1 col-end-4">
+            <div class="box col-start-1 col-end-5">
               <Images />
             </div>
-            <div class="box col-start-1 col-end-3">
+            <div class="w-[775px] box col-start-1 col-end-4">
               <About />
             </div>
-            <div class="box col-start-3 col-end-4">
+            <div class="w-[210px] box col-start-4 col-end-5">
               <Download />
             </div>
           </div>
