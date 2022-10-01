@@ -24,7 +24,7 @@ const App = () => {
         </div>
         <div class="w-full h-[90px]"></div>
         <div class="flex justify-center">
-          <div class="bg-black rounded-lg grid grid-cols-3 grid-rows-9 gap-2 max-w-5xl h-auto justify-items-center p-[15px]">
+          <div class="bg-black border border-pink-500 rounded-lg grid grid-cols-3 grid-rows-9 gap-2 max-w-5xl h-auto justify-items-center p-[15px]">
             <div class="box col-start-1 col-end-5">
               <Title />
             </div>
