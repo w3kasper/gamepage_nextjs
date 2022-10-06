@@ -4,9 +4,12 @@ import aboutTitle1 from "../public/images/about/title.png";
 import aboutTitle2 from "../public/images/about/title2.png";
 import aboutTitle3 from "../public/images/about/title3.png";
 
+import YoutubeEmbed from "./YoutubeEmbed";
+
 const About = () => {
   return (
     <div className="text-white p-4">
+      <YoutubeEmbed embedId="rokGy0huYEA" />
       <h1>
         <Image src={aboutTitle1} className="" alt="/" />
       </h1>

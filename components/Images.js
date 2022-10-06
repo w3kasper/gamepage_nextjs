@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import imageOne from "../public/images/1.png";
-import imageTwo from "../public/images/2.png";
+import imageTwo from "../public/images/4.png";
 import imageThree from "../public/images/3.png";
-//https://youtu.be/ho93e0IhdTA?t=606
+
+import nextButton from "../public/images/next.svg";
+import prevButton from "../public/images/prev.svg";
+
 const featuredImages = [imageOne, imageTwo, imageThree];
 let count = 0;
 
@@ -29,12 +32,25 @@ const ImageSlider = () => {
         className="aspect=w-16 aspect-h-9"
         alt="/"
       />
-      <div className="absolute w-[990px] top-1/2 transform -translate-y-1/2 flex justify-between items-center">
-        <button onClick={handleOnPrevClick}>Previous</button>
-        <button onClick={handleOnNextClick}>Next</button>
+      <div className="absolute w-[990px] top-1/2 transform translate-y-[60px] flex justify-between items-center px-[10px]">
+        <button onClick={handleOnPrevClick}>
+          <Image
+            src={prevButton}
+            className="opacity-40 hover:opacity-100"
+            alt="/"
+          />
+        </button>
+        <button onClick={handleOnNextClick}>
+          <Image
+            src={nextButton}
+            className="opacity-40 hover:opacity-100"
+            alt="/"
+          />
+        </button>
       </div>
     </div>
   );
 };
 
 export default ImageSlider;
+//https://youtu.be/ho93e0IhdTA?t=606
