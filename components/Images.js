@@ -44,7 +44,7 @@ const ImageSlider = () => {
   };
 
   const renderImage = () => (
-    <div className="text white">
+    <div className="items-center ">
       <Image
         src={featuredImages[currentIndex]}
         className="aspect=w-16 aspect-h-9"
@@ -54,7 +54,7 @@ const ImageSlider = () => {
   );
 
   const renderYoutube = () => (
-    <div className="text white">
+    <div className="items-center ">
       <YoutubeEmbed embedId="rokGy0huYEA" />
     </div>
   );
