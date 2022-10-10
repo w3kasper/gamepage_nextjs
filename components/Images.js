@@ -44,7 +44,7 @@ const ImageSlider = () => {
   };
 
   const renderImage = () => (
-    <div className="items-center ">
+    <div className="items-center">
       <Image
         src={featuredImages[currentIndex]}
         className="aspect=w-16 aspect-h-9"
@@ -55,14 +55,16 @@ const ImageSlider = () => {
 
   const renderYoutube = () => (
     <div className="items-center ">
-      <YoutubeEmbed embedId="rokGy0huYEA" />
+      <YoutubeEmbed embedId="H1WQI6IVF_U" className="aspect=w-16 aspect-h-9" />
     </div>
   );
 
   return (
     <div className="select-none">
-      <div>{imageType ? renderYoutube() : renderImage()}</div>
-      <div className="absolute w-[990px] top-1/2 transform translate-y-[60px] flex justify-between items-center px-[10px]">
+      <div className="w-[960px] h-[540px]">
+        {imageType ? renderYoutube() : renderImage()}
+      </div>
+      <div className="absolute w-[960px] top-1/2 transform translate-y-[85px] flex justify-between items-center align-middle px-[10px]">
         <button onClick={handleOnPrevClick}>
           <Image
             src={prevButton}
