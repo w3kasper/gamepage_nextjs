@@ -40,7 +40,7 @@ const About = () => {
           <Image src={aboutTitle1} className="" alt="/" />
         </h1>
         <h1>
-          The worlds first Kiss 'Em Up! Take the classic beat 'em up formula,
+          The worlds firstf Kiss 'Em Up! Take the classic beat 'em up formula,
           add some bullet-hell dodging and mix it up with awkward kissing. You
           got yourself a dang good game! Wishlist it! You will not regret!
           Minigames, fighting, characters, love, war. It's all here in Cops
