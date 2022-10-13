@@ -6,6 +6,7 @@ import Images from "../components/Images";
 import About from "../components/About";
 import Download from "../components/Download";
 import Holder from "../components/Holder";
+import Buybar from "../components/Buybar";
 
 // Constants
 
@@ -35,6 +36,7 @@ const App = () => {
               <Images />
             </div>
             <div className="w-[735px] box col-start-1 col-end-4">
+              <Buybar />
               <About />
             </div>
             <div className="w-[210px] box col-start-4 col-end-5">
