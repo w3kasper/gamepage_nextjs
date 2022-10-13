@@ -5,17 +5,26 @@ import aboutTitle2 from "../public/images/about/title2.png";
 import aboutTitle3 from "../public/images/about/title3.png";
 
 import solLogo from "../public/images/sol-logo.svg";
+import windowsLogo from "../public/images/windowslogo.svg";
 
 const About = () => {
   return (
     <>
-      <div className="grid overflow-hidden grid-cols-8 grid-rows-1 gap-0 w-[735px] bg-neutral-900 border border-purple-500 rounded-lg p-[8px] text-white uppercase">
+      <div className="grid overflow-hidden grid-cols-8 grid-rows-1 gap-0 w-[735px] bg-neutral-900 border border-purple-500 rounded-lg p-[3px] pt-[8px] pr-[8px] text-white uppercase">
         <div className="box col-start-1 col-end-6">
           <div className="pt-[3px] pl-[12px] font-sans font-light text-2xl">
             Cops Kissing Each Other
           </div>
         </div>
-        <div className="box col-start-6 col-end-7 text-center pt-2">WIN</div>
+        <div className="box col-start-6 col-end-7 pb-[5px] pl-10">
+          <Image
+            src={windowsLogo}
+            className="pb-1"
+            height={35}
+            width={35}
+            alt="/"
+          />{" "}
+        </div>
         <div className="box col-start-7 col-end-9">
           <div className="flex items-center space-x-3 rounded-full bg-neutral-800 p-2 pl-[15px]">
             {" "}
