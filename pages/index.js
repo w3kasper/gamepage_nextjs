@@ -7,6 +7,7 @@ import About from "../components/About";
 import Download from "../components/Download";
 import Holder from "../components/Holder";
 import Buybar from "../components/Buybar";
+import Gamenotes from "../components/Gamenotes.js";
 
 // Constants
 
@@ -41,8 +42,9 @@ const App = () => {
             </div>
             <div className="w-[210px] box col-start-4 col-end-5">
               <div className="box h-[95px] space-y-[20px]">
-                <Download />
                 <Holder />
+                <Download />
+                <Gamenotes />
               </div>
             </div>
           </div>

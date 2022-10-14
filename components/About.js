@@ -9,7 +9,7 @@ import aboutKissGif from "../public/images/about/kissing.gif";
 const About = () => {
   return (
     <>
-      <div className="text-white font-sans p-4 space-y-4 font-normal">
+      <div className="text-white font-sans p-4 pt-7 space-y-4 font-thin">
         <h1 className="text-center">
           <Image src={aboutTitle3} className="" alt="/" />
         </h1>
@@ -26,7 +26,7 @@ const About = () => {
             Minigames, fighting, characters, love, war. It's all here in{" "}
             <b>Cops Kissing Each Other</b>.
           </div>
-          <div className="pt-3">
+          <div className="pt-3 pb-3">
             <ul>
               <li>- Crazy awesome levels</li>
               <li>- Fall in love</li>
@@ -37,7 +37,7 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div class="grid overflow-hidden grid-cols-2 grid-rows-1 gap-2 w-auto h-auto">
+        <div class="grid overflow-hidden grid-cols-2 grid-rows-1 gap-2 w-auto h-auto text-center">
           <div class="box">
             <Image src={aboutAttackGif} className="" alt="/" />
           </div>
