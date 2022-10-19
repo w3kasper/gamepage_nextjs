@@ -21,7 +21,7 @@ const Download = () => {
 
       <div class="grid overflow-hidden grid-cols-7 grid-rows-1">
         <div class="box col-start-1 col-end-1">
-          <RiGamepadLine className="text-base" />
+          <RiGamepadLine className="text-lg" />
         </div>
         <div class="box col-start-2 col-end-8 text-xs font-thin pb-3">
           Controller/Keyboard Support
@@ -52,14 +52,26 @@ const Download = () => {
 
         <div class="grid overflow-hidden grid-cols-2 grid-rows-1 pt-1 ">
           <div class="box">
-            <p>English</p>
-            <p>German</p>
-            <p>Japanese</p>
+            <p>
+              <span className="font-medium">English</span>
+            </p>
+            <p>
+              <span className="font-medium">German</span>
+            </p>
+            <p>
+              <span className="font-medium">Japanese</span>
+            </p>
           </div>
           <div class="box">
-            <p>Russian</p>
-            <p>Chinese</p>
-            <p>Brazil</p>
+            <p>
+              <span className="font-medium">Russian</span>
+            </p>
+            <p>
+              <span className="font-medium">Mandarin</span>
+            </p>
+            <p>
+              <span className="font-medium">Brazilian</span>
+            </p>
           </div>
         </div>
       </div>

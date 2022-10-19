@@ -50,3 +50,13 @@ body {
   width: 100%;
   position: absolute;
 }
+
+.download-button {
+  border: none;
+  background-color: #f046ff;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 3px;
+  padding: 8px 16px;
+  cursor: pointer;
+}

@@ -8,6 +8,8 @@ import Download from "../components/Download";
 import Holder from "../components/Holder";
 import Buybar from "../components/Buybar";
 import Gamenotes from "../components/Gamenotes.js";
+import Comments from "../components/Comments.js";
+import Walletnavbar from "../components/Walletnavbar.js";
 
 // Constants
 
@@ -23,6 +25,7 @@ const App = () => {
       </Head>
 
       <div class="place-content-center">
+        {/*<Walletnavbar />*/}
         <Navbar />
       </div>
       <div class="w-full h-[100px]"></div>
@@ -42,14 +45,17 @@ const App = () => {
             </div>
             <div className="w-[210px] box col-start-4 col-end-5">
               <div className="box h-[95px] space-y-[20px]">
-                <Holder />
                 <Download />
+                <Holder />
                 <Gamenotes />
               </div>
             </div>
           </div>
+          <div>{/* <Comments /> */}</div>
         </div>
       </div>
+      <div class="w-full h-[50px]"></div>
+      <div class="w-full h-[30px] bg-neutral-900 border-t border-purple-500"></div>
     </div>
   );
 };

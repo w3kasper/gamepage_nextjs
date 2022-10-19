@@ -36,8 +36,8 @@ const Navbar = () => {
   );
 
   return (
-    <div>
-      <div className="flex fixed justify-end pr-4 w-full h-[50px] shadow-xl z-[100] bg-neutral-900 border-b border-purple-500">
+    <div className="">
+      <div className="flex fixed justify-end pr-4 h-[50px] shadow-xl z-[100] bg-neutral-900 border-b border-purple-500">
         {/* We only render the connect button if public key doesn't exist */}
         {publicKey ? renderConnectedContainer() : renderNotConnectedContainer()}
       </div>

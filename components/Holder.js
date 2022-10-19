@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import holderNFT from "../public/images/holder.gif";
+import magicEdenLogo from "../public/images/magicedenlogo.svg";
 import { FaDiscord } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
 import { GrTwitter } from "react-icons/gr";
@@ -19,16 +20,13 @@ const Download = () => {
         TRIPPIN APE TRIBE
       </h1>
 
-      <div className="justify-items-center px-10 pt-1">
-        <div class="grid justify-items-center grid-cols-4 grid-rows-1 rounded-full bg-neutral-800 h-[20px] ">
+      <div className="justify-items-center px-12 pt-1">
+        <div class="grid justify-items-center grid-cols-3 grid-rows-1 rounded-full bg-neutral-800 h-[20px] ">
           <div class="box pt-[2px]">
             <TbWorld className="text-white" />
           </div>
           <div class="box pt-[2px]">
             <FaDiscord className="text-white" />
-          </div>
-          <div class="box pt-[2px]">
-            <GrTwitter className="text-white" />
           </div>
           <div class="box pt-[2px]">
             <GrTwitter className="text-white" />
