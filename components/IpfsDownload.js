@@ -17,7 +17,7 @@ const IPFSDownload = ({ hash, filename }) => {
           </a>
         </div>
       ) : (
-        <p>Downloading file...</p>
+        <p>Downloadin file...</p>
       )}
     </div>
   );
