@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Ipfsdownload from "./IpfsDownload";
+import Product from "./Product";
 
 const Download = () => {
   return (

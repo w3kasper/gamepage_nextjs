@@ -21,8 +21,8 @@ export default function Product({ product }) {
           <div className={styles.product_price}>{price} USDC</div>
           {/* I'm hardcoding these for now, we'll fetch the hash from the API later*/}
           <IPFSDownload
-            filename="emojis.zip"
-            hash="QmWWH69mTL66r3H8P4wUn24t1L5pvdTJGUTKBqT11KCHS5"
+            filename="demo.txt"
+            hash="QmWP9BMvEsP9wzabXVmUErkLysrorrgeF46ohhKJ3oQSLn"
             cta="Download emojis"
           />
         </div>
