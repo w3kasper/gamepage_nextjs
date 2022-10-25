@@ -1,8 +1,32 @@
 import React, { useEffect, useState } from "react";
-import Ipfsdownload from "./IpfsDownload";
 import Product from "./Product";
+import IPFSDownload from "./IpfsDownload";
+
+import { useWallet } from "@solana/wallet-adapter-react";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
 
 const Download = () => {
+  const { publicKey } = useWallet();
+  const [products, setProducts] = useState([]);
+
+  const renderNotConnectedContainer = () => (
+    <div>
+      <p className="text-white">NOT CONNECTED SELECT WALLET</p>
+    </div>
+  );
+
+  const renderItemBuyContainer = () => (
+    <div className="text-white">
+      <p className="text-white">CONNECTED</p>
+
+      <IPFSDownload
+        filename="games.zip"
+        hash="QmdabcZ2xS72ywHnxuVGnAcR4nzyZnXfNFumpZzSK17GT3"
+        cta="Download games"
+      />
+    </div>
+  );
+
   return (
     <div className="bg-neutral-900 border border-purple-500 rounded-lg p-3 pt-4">
       <div className="px-[6px] pb-3 space-x-3">
@@ -19,7 +43,9 @@ const Download = () => {
       <div className="text-white text-centerfont-sans font-thin text-xs text-center">
         -downloadable .zip file-
       </div>
-      <Ipfsdownload />
+      <main>
+        {publicKey ? renderItemBuyContainer() : renderNotConnectedContainer()}
+      </main>
     </div>
   );
 };

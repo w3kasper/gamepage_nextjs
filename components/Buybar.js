@@ -31,7 +31,7 @@ const Buybar = () => {
             alt="/"
           />{" "}
           <text className="font-sans font-normal text-white text-1xl text-center">
-            0.75
+            NFT
           </text>
           <button className="w-[80px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center">
             BUY
