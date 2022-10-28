@@ -1,11 +1,11 @@
 [
   {
     "id": 1,
-    "name": "Cops Kissing Each Other",
-    "price": "0.75",
-    "description": "Get this fire emoji pack for only $0.09!",
+    "name": "Cops Kissing Demo",
+    "price": "0.00",
+    "description": "Cops Demo. Windows download.",
     "image_url": "https://i.imgur.com/rVD8bjt.png",
-    "filename": "games.zip",
+    "filename": "demo",
     "hash": "QmdabcZ2xS72ywHnxuVGnAcR4nzyZnXfNFumpZzSK17GT3"
   }
 ]
