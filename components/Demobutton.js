@@ -1,7 +1,7 @@
 import React from "react";
 import useIPFS from "../hooks/useIPFS";
 
-const IPFSUnconnected = ({ demohash, demofile }) => {
+const Demobutton = ({ demohash, demofile }) => {
   const file = useIPFS(demohash, demofile);
 
   return (
@@ -21,4 +21,4 @@ const IPFSUnconnected = ({ demohash, demofile }) => {
   );
 };
 
-export default IPFSUnconnected;
+export default Demobutton;
