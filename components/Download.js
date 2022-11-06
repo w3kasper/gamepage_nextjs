@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-
+import { useMetaplex } from "./useMetaplex";
 import Demobutton from "./Demobutton";
 import Playbutton from "./Playbutton";
 
@@ -12,8 +12,7 @@ import { Metadata } from "@metaplex-foundation/mpl-token-metadata";
 //check if you have NFT then show play button
 
 const Download = () => {
-  const publicKey = useWallet();
-  const [products, setProducts] = useState([]);
+  const { publicKey } = useWallet();
 
   //1.check wallet is connected 2.connected non holder 3.connected holder
   //check and see if has NFT that is the same
@@ -95,7 +94,7 @@ const Download = () => {
         -downloadable .zip file-
       </div>
       <div className="text-white text-centerfont-sans font-thin text-xs text-center pt-[10px]">
-        Status: CONNECTED + NONHOLDER
+        Status: CONNECTED + NONHOLDER+
       </div>
     </>
   );
