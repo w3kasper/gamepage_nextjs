@@ -19,6 +19,8 @@ const Navbar = () => {
     publicKey ? setPublicKeyString(publicKey.toBase58()) : "NOT CONNECTED/NULL";
   }, [publicKey]);
 
+  //console.log(publicKeyString.toString());
+
   const renderConnectedContainer = () => (
     <div className="flex top-0 right-[10px] py-[9px]">
       <Image src={profileIconGreen} className="" alt="/" />

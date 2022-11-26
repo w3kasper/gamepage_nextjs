@@ -21,14 +21,14 @@ const Download = () => {
       </h1>
 
       <div className="justify-items-center px-12 pt-1">
-        <div class="grid justify-items-center grid-cols-3 grid-rows-1 rounded-full bg-neutral-800 h-[20px] ">
-          <div class="box pt-[2px]">
+        <div className="grid justify-items-center grid-cols-3 grid-rows-1 rounded-full bg-neutral-800 h-[20px] ">
+          <div className="box pt-[2px]">
             <TbWorld className="text-white" />
           </div>
-          <div class="box pt-[2px]">
+          <div className="box pt-[2px]">
             <FaDiscord className="text-white" />
           </div>
-          <div class="box pt-[2px]">
+          <div className="box pt-[2px]">
             <GrTwitter className="text-white" />
           </div>
         </div>

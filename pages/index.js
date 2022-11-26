@@ -24,14 +24,14 @@ const App = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div class="place-content-center">
+      <div className="place-content-center">
         {/*<Walletnavbar />*/}
         <Navbar />
       </div>
-      <div class="w-full h-[100px]"></div>
+      <div className="w-full h-[100px]"></div>
 
-      <div class="flex justify-center">
-        <div class="bg-black border border-pink-500 rounded-lg max-w-5xl h-auto justify-items-center p-[30px]">
+      <div className="flex justify-center">
+        <div className="bg-black border border-pink-500 rounded-lg max-w-5xl h-auto justify-items-center p-[30px]">
           <div className="grid grid-cols-3 grid-rows-9 gap-4">
             <div className="box col-start-1 col-end-5">
               <Title />
@@ -54,8 +54,8 @@ const App = () => {
           <div>{/* <Comments /> */}</div>
         </div>
       </div>
-      <div class="w-full h-[50px]"></div>
-      <div class="w-full h-[30px] bg-neutral-900 border-t border-purple-500"></div>
+      <div className="w-full h-[50px]"></div>
+      <div className="w-full h-[30px] bg-neutral-900 border-t border-purple-500"></div>
     </div>
   );
 };

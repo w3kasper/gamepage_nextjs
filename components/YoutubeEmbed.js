@@ -11,7 +11,7 @@ const YoutubeEmbed = ({ embedId }) => (
       allowFullScreen
       title="Embedded trailer"
       modestbranding="1"
-      autoplay="0"
+      //autoplay="0"
     />
   </div>
 );

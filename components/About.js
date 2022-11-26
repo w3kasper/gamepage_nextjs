@@ -13,7 +13,7 @@ const About = () => {
         <h1 className="text-center">
           <Image src={aboutTitle3} className="" alt="/" />
         </h1>
-        <div classname="">
+        <div className="">
           <div className="font-semibold pt-4">KISS EM UP!!!!</div>
 
           <div className="pt-3">
@@ -37,11 +37,11 @@ const About = () => {
             </ul>
           </div>
         </div>
-        <div class="grid overflow-hidden grid-cols-2 grid-rows-1 gap-2 w-auto h-auto text-center">
-          <div class="box">
+        <div className="grid overflow-hidden grid-cols-2 grid-rows-1 gap-2 w-auto h-auto text-center">
+          <div className="box">
             <Image src={aboutAttackGif} className="" alt="/" />
           </div>
-          <div class="box">
+          <div className="box">
             <Image src={aboutKissGif} className="" alt="/" />
           </div>
         </div>
