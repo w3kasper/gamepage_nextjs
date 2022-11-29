@@ -55,12 +55,15 @@ const Download = () => {
 
         //list through short
         const listItems = list.map((nftlist) => {
-          //console.log(nftlist.updateAuthorityAddress.toBase58());
-          console.log(nftlist.name);
-          if (nftlist.name == "Vaxxed Doggo #1169") {
-            console.log("set a useeffect to load ");
+          //console.log(nftlist.name);
+          if (
+            nftlist.updateAuthorityAddress.toBase58() ==
+            "Fz1NzfYcHEGBJCRhkTDJRjxMgbMrZsRSTas1iVnFnK7w"
+          ) {
+            //console.log(nftlist.updateAuthorityAddress.toBase58());
+            //console.log("set a useeffect to load ");
             setHolder("HiHolder"); //is holding
-            console.log(holder);
+            //console.log(holder);
           }
         });
 
@@ -74,8 +77,6 @@ const Download = () => {
 
     // call the function
     fetchNFTs();
-    // make sure to catch any error
-    //.catch(console.error);
   }, [address]);
 
   ///
@@ -102,7 +103,7 @@ const Download = () => {
       //list through short
       const listItems = list.map((nftlist) => {
         //console.log(nftlist.updateAuthorityAddress.toBase58());
-        console.log(nftlist.name);
+        //console.log(nftlist.name);
       });
 
       //.updateAuthorityAddress.toBase58()
@@ -125,12 +126,12 @@ const Download = () => {
             className="py-[6px] px-[26px] w-[80px] h-[30px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 outline outline-1 rounded font-sans font-thin text-sm text-white text-center uppercase opacity-30"
             disabled
           >
-            PLAY
+            FULL
           </a>
         </div>
         <div className="box">
           <Demobutton
-            demohash="QmdabcZ2xS72ywHnxuVGnAcR4nzyZnXfNFumpZzSK17GT3"
+            demohash="QmapHivzpzxvKfeu93JcmH9md73gXsJuVsr4o11zUPsM78"
             demofile="demo"
           />
         </div>
@@ -138,9 +139,6 @@ const Download = () => {
 
       <div className="text-white text-centerfont-sans font-thin text-xs text-center pt-[10px]">
         -downloadable .zip file-
-      </div>
-      <div className="text-white text-centerfont-sans font-thin text-xs text-center pt-[10px]">
-        Status: NOT CONNECTED
       </div>
     </>
   );
@@ -179,7 +177,7 @@ const Download = () => {
           <div className="box">
             <Playbutton
               filenamefull="game"
-              hashfull="Qmf1k8hEFFfFFEehXLfJoCBLCs2WhT3CtYS2D94z5XfiDV"
+              hashfull="QmYbiCiYKoM1jVHiKLKteX3NLCJqvi6YVDoUg48VCC57LF"
             />
           </div>
         ) : (
@@ -192,19 +190,10 @@ const Download = () => {
             </a>
           </div>
         )}
-        {/*
-        <div className="box">
-          <a
-            className="py-[6px] px-[26px] w-[80px] h-[30px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500 outline outline-1 rounded font-sans font-thin text-sm text-white text-center uppercase opacity-30"
-            disabled
-          >
-            PLAY
-          </a>
-        </div>
-        */}
+
         <div className="box">
           <Demobutton
-            demohash="QmdabcZ2xS72ywHnxuVGnAcR4nzyZnXfNFumpZzSK17GT3"
+            demohash="QmapHivzpzxvKfeu93JcmH9md73gXsJuVsr4o11zUPsM78"
             demofile="demo"
           />
         </div>
@@ -213,9 +202,7 @@ const Download = () => {
       <div className="text-white text-centerfont-sans font-thin text-xs text-center pt-[10px]">
         -downloadable .zip file-
       </div>
-      <div className="text-white text-centerfont-sans font-thin text-xs text-center pt-[10px]">
-        Status: CONNECTED + {holder ? "HOLDER" : "NON HOLDER"}
-      </div>
+
       {/* 
       <button className="text-white" onClick={fetchNFTs}>
         Fetch

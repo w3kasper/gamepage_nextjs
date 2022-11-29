@@ -9,7 +9,7 @@ import profileIconGreen from "../public/images/profileiconGREEN.svg";
 
 // Constants
 
-const Navbar = () => {
+const Walletnavbar = () => {
   // This will fetch the users' public key (wallet address) from any wallet we support
   const { publicKey } = useWallet();
   const [publicKeyString, setPublicKeyString] = useState([]); //set useState variables
@@ -18,6 +18,8 @@ const Navbar = () => {
   useEffect(() => {
     publicKey ? setPublicKeyString(publicKey.toBase58()) : "NOT CONNECTED/NULL";
   }, [publicKey]);
+
+  //console.log(publicKeyString.toString());
 
   const renderConnectedContainer = () => (
     <div className="flex top-0 right-[10px] py-[9px]">
@@ -36,8 +38,9 @@ const Navbar = () => {
   );
 
   return (
-    <div className="">
-      <div className="flex fixed justify-end pr-4 h-[50px] shadow-xl z-[100] bg-neutral-900 border-b border-purple-500">
+    <div className="grid overflow-hidden grid-cols-2 grid-rows-1 gap-0 w-full justify-items-end p-4">
+      <div className="box "></div>
+      <div className="box fixed flex pr-4 rounded-full w-[215px] h-[50px] z-[100] bg-neutral-900 border border-purple-500">
         {/* We only render the connect button if public key doesn't exist */}
         {publicKey ? renderConnectedContainer() : renderNotConnectedContainer()}
       </div>
@@ -45,4 +48,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Walletnavbar;

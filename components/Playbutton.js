@@ -12,7 +12,7 @@ const Playbutton = ({ hashfull, filenamefull }) => {
           href={filefull}
           download="game"
         >
-          PLAY
+          FULL
         </a>
       ) : (
         <p>Downloading file...</p>

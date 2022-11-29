@@ -19,16 +19,16 @@ const App = () => {
   return (
     <div>
       <Head>
-        <title>Game Page Example</title>
+        <title>Cops Kissing Each Other</title>
         <meta name="content" content="MY GAME INFO" />
-        <link rel="icon" href="/favicon.ico" />
+        {/*<link rel="icon" href="/favicon.ico" />*/}
       </Head>
 
       <div className="place-content-center">
-        {/*<Walletnavbar />*/}
-        <Navbar />
+        <Walletnavbar />
+        {/*<Navbar />*/}
       </div>
-      <div className="w-full h-[100px]"></div>
+      <div className="w-full h-[8px]"></div>
 
       <div className="flex justify-center">
         <div className="bg-black border border-pink-500 rounded-lg max-w-5xl h-auto justify-items-center p-[30px]">
@@ -55,7 +55,9 @@ const App = () => {
         </div>
       </div>
       <div className="w-full h-[50px]"></div>
-      <div className="w-full h-[30px] bg-neutral-900 border-t border-purple-500"></div>
+      <div className=" text-white text-center font-sans font-thin text-xs w-full h-[30px] bg-neutral-900 border-t border-purple-500 pt-[6px]">
+        <a href="https://twitter.com/W3Kasper">Made by @W3Kasper</a>
+      </div>
     </div>
   );
 };

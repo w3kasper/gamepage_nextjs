@@ -16,9 +16,10 @@ const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [imageType, setImageType] = useState(true);
 
+  /*
   useEffect(() => {
     document.title = `index: ${currentIndex} it: ${imageType}`;
-  }, [currentIndex]);
+  }, [currentIndex]);\*/
 
   const handleOnNextClick = () => {
     count = (count + 1) % featuredImages.length;

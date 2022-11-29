@@ -36,6 +36,11 @@ const About = () => {
               <li>- Sweet kissing movez</li>
             </ul>
           </div>
+          <div className="pt-3 pb-3">
+            DOWNLOAD NOTES: <p>1. Download File. </p>
+            <p>2. Unzip. </p>
+            <p>3. Click .exe file.</p> <p> * Windows only *</p>
+          </div>
         </div>
         <div className="grid overflow-hidden grid-cols-2 grid-rows-1 gap-2 w-auto h-auto text-center">
           <div className="box">
