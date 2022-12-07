@@ -18,17 +18,6 @@ const mx = Metaplex.make(connection);
 const Download = () => {
   const { publicKey } = useWallet();
 
-  ///OLD PUBLIC
-  //const [publicKeyString, setPublicKeyString] = useState([]); //set useState variables public key from useWallet
-
-  //set useeffect to "mount" the variable on refresh/reload of item when its updated
-  //useEffect(() => {
-  //  publicKey ? setPublicKeyString(publicKey.toBase58()) : "NOT CONNECTED/NULL";
-  //}, [publicKey]);
-
-  //console.log(publicKeyString.toString());//this is the public key
-  ///
-
   ////// CHECK THE NFT OF CONNECTED WALLET ///////
   const [address, setAddress] = useState(""); //address of public key to check nfts with
 
@@ -79,41 +68,6 @@ const Download = () => {
     fetchNFTs();
   }, [address]);
 
-  ///
-
-  const fetchNFTs = async () => {
-    try {
-      const list = await mx
-        .nfts()
-        .findAllByOwner({ owner: new PublicKey(address) });
-      setNftList(list);
-      //console.log(list);
-
-      //list through
-      // const listItems = list.map((nftlist) => {
-      //   if (nftlist.name == "") {
-      //     console.log("LostBoy Club");
-      //     console.log(nftlist.updateAuthorityAddress.toBase58());
-      //     //if equal to the token update show the correct
-      //   } else {
-      //     console.log(nftlist.updateAuthorityAddress.toBase58());
-      //   }
-      // });
-
-      //list through short
-      const listItems = list.map((nftlist) => {
-        //console.log(nftlist.updateAuthorityAddress.toBase58());
-        //console.log(nftlist.name);
-      });
-
-      //.updateAuthorityAddress.toBase58()
-      //updateAuthorityAddress is the one we want
-    } catch (e) {
-      console.error(e);
-    }
-  };
-  ////////////////
-
   //1.check wallet is connected 2.connected non holder 3.connected holder
   //check and see if has NFT that is the same
   //set choice variable if
@@ -142,33 +96,6 @@ const Download = () => {
       </div>
     </>
   );
-
-  /*
-  const renderHolderContainer = () => (
-    <>
-      <div classNames="grid grid-cols-2 grid-rows-1 gap-0 ">
-        <div className="box">
-          <Playbutton
-            filenamefull="game"
-            hashfull="Qmf1k8hEFFfFFEehXLfJoCBLCs2WhT3CtYS2D94z5XfiDV"
-          />
-        </div>
-        <div className="box">
-          <Demobutton
-            demofile="demo"
-            demohash="QmdabcZ2xS72ywHnxuVGnAcR4nzyZnXfNFumpZzSK17GT3"
-          />
-        </div>
-      </div>
-      <div className="text-white text-centerfont-sans font-thin text-xs text-center pt-[10px]">
-        -downloadable .zip file-
-      </div>
-      <div className="text-white text-centerfont-sans font-thin text-xs text-center pt-[10px]">
-        Status: CONNECTED + HOLDER
-      </div>
-    </>
-  );
-  */
 
   const renderConnectedContainer = () => (
     <>

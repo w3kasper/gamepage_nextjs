@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import solLogo from "../public/images/sol-logo.svg";
 import windowsLogo from "../public/images/windowslogo.svg";
+import Buy from "./Buy";
 
 const openInNewTab = (url) => {
   window.open(url, "_blank", "noopener,noreferrer");
@@ -34,8 +35,8 @@ const Buybar = () => {
             width={24}
             alt="/"
           />{" "}
-          <text className="font-sans font-normal text-white text-1xl text-center">
-            NFT
+          <text className="font-sans font-bold text-white text-1xl text-center">
+            1.50
           </text>
           <button
             className="w-[80px] h-[24px] bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 hover:from-indigo-900 hover:via-purple-900 hover:to-pink-900 outline outline-1 rounded-full font-sans font-thin text-sm text-white text-center"

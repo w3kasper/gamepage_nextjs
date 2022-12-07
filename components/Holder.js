@@ -72,7 +72,7 @@ const Holder = () => {
         Lost Boy Club
       </h1>
       <p className="text-white font-sans font-thin text-xs text-center">
-        -nft holder group-
+        -nft founder group-
       </p>
 
       <div className="pt-[10px]">
