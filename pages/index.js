@@ -25,7 +25,6 @@ const App = () => {
       </Head>
 
       <div className="place-content-center">
-        {/* <Walletnavbar /> */}
         <Navbar />
       </div>
       <div className="w-full h-[80px]"></div>
